@@ -1,1 +1,0 @@
-export async function POST(){return Response.json({error:"This legacy endpoint is retired."},{status:410})}

@@ -6,7 +6,7 @@
                     "dev":  "next dev",
                     "build":  "next build",
                     "start":  "next start",
-                    "lint":  "node \"..\\vowrail\\node_modules\\eslint\\bin\\eslint.js\" .",
+                    "lint":  "eslint .",
                     "type-check":  "tsc --noEmit",
                     "test":  "node --experimental-strip-types --test tests/*.test.ts"
                 },
