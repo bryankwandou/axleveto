@@ -44,3 +44,5 @@ next-env.d.ts
 /.next-stale/
 *.png
 .runtime*
+
+.vercel
