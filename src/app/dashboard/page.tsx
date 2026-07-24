@@ -1,1 +1,1 @@
-import{AppShell}from"@/components/app-shell";import{FleetDashboard}from"@/components/fleet-dashboard";export default function Dashboard(){return <AppShell kicker="Friday · July 24, 2026" title="Morning control room"><FleetDashboard/></AppShell>}
+import{AppShell}from"@/components/app-shell";import{FleetDashboard}from"@/components/fleet-dashboard";import{MotionReveal}from"@/components/motion-reveal";export default function Dashboard(){return <AppShell kicker="Friday · July 24, 2026" title="Morning control room"><MotionReveal><FleetDashboard/></MotionReveal></AppShell>}

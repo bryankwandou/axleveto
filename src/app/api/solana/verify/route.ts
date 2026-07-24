@@ -1,0 +1,5 @@
+import { Connection, clusterApiUrl } from "@solana/web3.js";
+import { NextResponse } from "next/server";
+import { z } from "zod";
+const schema=z.object({signature:z.string().min(64).max(128)});
+export async function POST(request:Request){const parsed=schema.safeParse(await request.json());if(!parsed.success)return NextResponse.json({error:"A valid Solana signature is required."},{status:400});try{const connection=new Connection(process.env.SOLANA_RPC_URL||process.env.NEXT_PUBLIC_SOLANA_RPC_URL||clusterApiUrl("devnet"),"confirmed");const status=(await connection.getSignatureStatuses([parsed.data.signature],{searchTransactionHistory:true})).value[0];if(!status)return NextResponse.json({verified:false,network:"devnet",error:"Signature was not found."},{status:404});return NextResponse.json({verified:status.err===null,network:"devnet",slot:status.slot,confirmation_status:status.confirmationStatus,error:status.err})}catch(error){return NextResponse.json({verified:false,error:error instanceof Error?error.message:"Unable to verify signature."},{status:503})}}

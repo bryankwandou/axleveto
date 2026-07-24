@@ -9,6 +9,9 @@ Most fleet systems record maintenance and inspections. AxleVeto owns the decisio
 ## MVP workflows
 
 - Fleet control room with live ready, attention, and blocked states.
+- Grounded Groq operations agent with visible tool execution trace and deterministic dispatch guardrails.
+- Phantom/Solflare browser wallet connection with devnet balance, wallet-signed memo proofs, and server verification.
+- Framer Motion page reveals, agent response transitions, and proof-state animation with reduced-motion support.
 - Driver pre-trip notes converted into grounded structured drafts through Groq when available, with deterministic fallback.
 - Explicit `Not reported` handling for every unmentioned vehicle system.
 - Server-side dispatch gate with direct API enforcement.

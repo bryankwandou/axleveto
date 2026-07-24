@@ -1,0 +1,1 @@
+import{AppShell}from"@/components/app-shell";import{OperationsAgent}from"@/components/operations-agent";export default function Page(){return <AppShell kicker="Grounded fleet intelligence" title="Operations agent"><OperationsAgent/></AppShell>}
