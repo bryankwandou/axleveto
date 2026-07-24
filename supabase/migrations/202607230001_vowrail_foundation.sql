@@ -1,0 +1,1 @@
+-- Retired template migration. AxleVeto schema is defined in 202607240001_axleveto_foundation.sql.

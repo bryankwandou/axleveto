@@ -1,0 +1,1 @@
+﻿import{AppShell}from"@/components/app-shell";import{InspectionFlow}from"@/components/inspection-flow";export default function Page(){return <AppShell kicker="Driver workflow" title="Pre-trip inspection"><InspectionFlow/></AppShell>}

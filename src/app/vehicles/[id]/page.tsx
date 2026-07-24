@@ -1,0 +1,1 @@
+﻿import{AppShell}from"@/components/app-shell";import{ResolutionFlow}from"@/components/resolution-flow";export default function Page(){return <AppShell kicker="Maintenance authority" title="Resolve dispatch veto"><ResolutionFlow/></AppShell>}

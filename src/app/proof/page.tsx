@@ -1,0 +1,1 @@
+﻿import{AppShell}from"@/components/app-shell";import{ProofLedger}from"@/components/proof-ledger";export default function Page(){return <AppShell kicker="Verifiable operations" title="Proof ledger"><ProofLedger/></AppShell>}
